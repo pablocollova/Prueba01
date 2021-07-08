@@ -12,6 +12,9 @@ class MainActivity : AppCompatActivity() {
         // enum clases
         enumClasses()
 
+        // Nested and Inner Classes
+        nestedAndInnerClasses()
+
     }
 
     // lección 1 kotlin intermedio: Enum Classes
@@ -47,5 +50,14 @@ class MainActivity : AppCompatActivity() {
 
         //Inicialización
         println(userDirection.dir)
+    }
+
+    // Lección 2 kotlin intermedio: Nested and Inner Classes
+    private fun nestedAndInnerClasses(){
+        //clase anidada (nested)
+        val myNestedClass= MyNestedAndInnerClass.MyNestedClass()
+        val sum = myNestedClass.sum(10,5)
+        println("el resultado de la suma es: $sum")
+
     }
 }
