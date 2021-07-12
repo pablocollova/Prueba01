@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
         // Nested and Inner Classes
         nestedAndInnerClasses()
 
+        //herencia de clases
+
+
     }
 
     // lección 1 kotlin intermedio: Enum Classes
@@ -54,10 +57,16 @@ class MainActivity : AppCompatActivity() {
 
     // Lección 2 kotlin intermedio: Nested and Inner Classes
     private fun nestedAndInnerClasses(){
+
         //clase anidada (nested)
         val myNestedClass= MyNestedAndInnerClass.MyNestedClass()
         val sum = myNestedClass.sum(10,5)
         println("el resultado de la suma es: $sum")
+
+        // clase interna (inner)
+        val myInnerClass= MyNestedAndInnerClass().MyInnerClass()
+        val sumTwo:Int= myInnerClass.sumTwo(10)
+        println("el resultado de sumar 2 es:$sumTwo")
 
     }
 }
