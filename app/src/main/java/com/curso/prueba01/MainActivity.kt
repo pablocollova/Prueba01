@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         nestedAndInnerClasses()
 
         //herencia de clases
-
+        classInheritance()
 
     }
 
@@ -44,14 +44,14 @@ class MainActivity : AppCompatActivity() {
         userDirection=Direction.WEST
         println("Dirección: $userDirection")
 
-        //propiedades por defecto
+        /*propiedades por defecto*/
         println("propiedad name: ${userDirection.name}")
         println("propiedad ordinal: ${userDirection.ordinal}")
 
-        //funciones
+        /*funciones*/
         println(userDirection.description())
 
-        //Inicialización
+        /*Inicialización*/
         println(userDirection.dir)
     }
 
@@ -69,4 +69,13 @@ class MainActivity : AppCompatActivity() {
         println("el resultado de sumar 2 es:$sumTwo")
 
     }
+
+    //Leccion 3 Kotlin Intermedio: Class Inheritance
+    private fun classInheritance(){
+        val programmer=Programmer("pablo",36)
+        programmer.work()
+        val designer=Designer("juan",30)
+        designer.work()
+    }
+
 }
